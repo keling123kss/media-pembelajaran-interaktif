@@ -125,6 +125,24 @@
       transform: translateY(-2px);
       box-shadow: var(--shadow-sm);
     }
+    .back-button-footer {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 1rem auto;
+            display: block;
+            max-width: 150px;
+            text-align: center;
+            transition: background 0.3s ease;
+            user-select: none;
+        }
+
+        .back-button-footer:hover {
+            background: var(--secondary-color);
+        }
 
     footer {
       background: linear-gradient(to right, var(--accent-color), #26c6da);
@@ -194,37 +212,31 @@
 
   <div class="container">
     <div class="card">
-      <img src="slidingmesh.jpg" alt="Slidingmesh Transmission">
+      <img src="pengertian.jpg" alt="Pengertian Transmisi">
       <div class="card-content">
-        <div class="card-title">SLIDINGMESH</div>
-        <a href="sliding-mesh.html" class="card-button">Pelajari Materi</a>
+        <div class="card-title">PENGERTIAN TRANSMISI</div>
+        <a href="pengertian.html" class="card-button">Pelajari Materi</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="unit-synchromesh-2.png" alt="Synchromesh Transmission">
+      <img src="TM.jpg" alt="komponen Transmisi">
       <div class="card-content">
-        <div class="card-title">SYNCHROMESH</div>
-        <a href="synchromesh.html" class="card-button">Pelajari Materi</a>
+        <div class="card-title">KOMPONEN TRANSMISI</div>
+        <a href="komponen.html" class="card-button">Pelajari Materi</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="constant-mesh.jpeg" alt="Constant-mesh Transmission">
-      <div class="card-content">
-        <div class="card-title">CONSTANT-MESH</div>
-        <a href="constans-mesh.html" class="card-button">Pelajari Materi</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="gambar-transmisi.jpg" alt="Troubleshooting">
+      <img src="TB.jpg" alt="Troubleshooting">
       <div class="card-content">
         <div class="card-title">TROUBLESHOOTING</div>
         <a href="troubleshooting.html" class="card-button">Pelajari Materi</a>
       </div>
     </div>
   </div>
+  <!-- Kembali Button -->
+  <button class="back-button-footer" onclick="window.history.back();" aria-label="Kembali ke halaman sebelumnya">Kembali</button>
 
   <footer>
     E-LEARNING TRANSMISI MANUAL<br>

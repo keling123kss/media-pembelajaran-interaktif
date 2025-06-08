@@ -253,7 +253,24 @@
             background: rgba(255, 255, 255, 0.8);
             box-shadow: var(--shadow-md);
         }
+        .back-button-footer {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 1rem auto;
+            display: block;
+            max-width: 150px;
+            text-align: center;
+            transition: background 0.3s ease;
+            user-select: none;
+        }
 
+        .back-button-footer:hover {
+            background: var(--secondary-color);
+        }
         
 
         footer {
@@ -498,24 +515,21 @@
                 Pengertian Sliding Mesh
             </h2>
             <p>
-                Transmisi sliding mesh adalah tipe transmisi manual yang menggunakan gigi yang saling bergeser untuk menghubungkan dan memutuskan tenaga dari mesin ke roda. Pada sistem ini, gigi-gigi tidak memiliki mekanisme penghubung otomatis, sehingga pengemudi harus secara manual memindahkan gigi dengan menggunakan tuas transmisi.
+                Sliding mesh merupakan jenis awal transmisi manual dan paling mudah untuk dimengerti. Transmisi jenis ini, karena memang memiliki banyak kekurangan dalam cara kerjanya. Diantaranya adalah karena mengeluarkan suara yang kasar saat perpindahan gigi, perpindahan gigi membutuhkan waktu yang cukup lama, hanya dapat menggunakan salah satu dari roda gigi.
             </p>
             <div class="interactive-tabs">
-                <button class="tab-button active" onclick="showTab('overview')">Overview</button>
                 <button class="tab-button" onclick="showTab('components')">Komponen</button>
                 <button class="tab-button" onclick="showTab('working')">Cara Kerja</button>
             </div>
-            <div id="overview" class="tab-content active">
-                <div class="animation-container">
-                    <img src="Sliding-Mesh-Gearbox.jpg" alt="Sliding-Mesh Unit" style="width: 100%; height: 100%; object-fit: contain;">
-                </div>
-            </div>
             <div id="components" class="tab-content">
+                <div class="animation-container">
+                    <img src="Sliding-Mesh-Gearbox.jpg" alt="Synchromesh Unit" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
                 <div class="feature-grid">
                     <div class="feature-card">
                         <h3><i class="fas fa-cog"></i> Output Shaft</h3>
                         <p>Poros output mentransfer tenaga yang telah diproses oleh gigi-gigi transmisi ke roda kendaraan.</p>
-                    </div>
+                      </div>
                     <div class="feature-card">
                         <h3><i class="fas fa-cog"></i> Input Shaft</h3>
                         <p>Poros input adalah poros yang menghubungkan mesin dengan transmisi. Poros ini menerima tenaga dari mesin dan mentransfernya ke gigi-gigi dalam transmisi.</p>
@@ -544,21 +558,18 @@
             </div>
             <div id="working" class="tab-content">
                 <div class="interactive-diagram">
-                    <img src="Sliding-Mesh-Gearbox.jpg" alt="Synchromesh Working" style="width: 50%; height: auto;">
-                    <div class="diagram-hotspot" style="top: 30%; left: 20%">
-                        <div class="hotspot-content">
-                            Sliding Mesh berfungsi sebagai penggerak mekanisme perpindahan gigi
-                        </div>
-                    </div>
-                    <div class="diagram-hotspot" style="top: 50%; left: 40%">
-                        <div class="hotspot-content">
-                            Clutch Hub menghubungkan komponen
-                        </div>
-                    </div>
+                    <video controls style="width: 100%; height: auto;">
+                        <source src="slidingmesh.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <i>Sumber : Jaes- Lesics Indonesia </i>
                 </div>
             </div>
+            
         </section>
     </div>
+    <!-- Kembali Button -->
+    <button class="back-button-footer" onclick="window.history.back();" aria-label="Kembali ke halaman sebelumnya">Kembali</button>
 
 
     <footer>

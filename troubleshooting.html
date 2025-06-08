@@ -189,6 +189,24 @@
         .content-table tr:hover {
             background-color: rgba(221, 221, 221, 0.5); /* Adding transparency */
         }
+        .back-button-footer {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 1rem auto;
+            display: block;
+            max-width: 150px;
+            text-align: center;
+            transition: background 0.3s ease;
+            user-select: none;
+        }
+
+        .back-button-footer:hover {
+            background: var(--secondary-color);
+        }
 
         footer {
             background: linear-gradient(to right, var(--accent-color), #26c6da); /* Adjusted color */
@@ -321,7 +339,8 @@
         <!-- Add more sections for other aspects of troubleshooting if needed -->
 
     </div>
-
+    <!-- Kembali Button -->
+    <button class="back-button-footer" onclick="window.history.back();" aria-label="Kembali ke halaman sebelumnya">Kembali</button>
     <footer>
         E-LEARNING TRANSMISI MANUAL<br>
         UNIVERSITAS NEGERI SEMARANG

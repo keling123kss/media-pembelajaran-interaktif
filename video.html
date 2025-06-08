@@ -72,7 +72,7 @@
 
         .video-card {
             background: var(--card-background);
-            border-radius: 15px;
+            border-radius: 20px;
             overflow: hidden;
             box-shadow: var(--shadow-md);
             transition: all 0.3s ease;
@@ -80,15 +80,15 @@
         }
 
         .video-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-20px);
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
         }
 
         .thumbnail-container {
             position: relative;
             width: 100%;
             padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            background: #000;
+            background: #f8f8f8;
             overflow: hidden;
         }
 
@@ -167,6 +167,24 @@
             padding: 0.25rem 0.5rem;
             border-radius: 4px;
             font-size: 0.8rem;
+        }
+        .back-button-footer {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 1rem auto;
+            display: block;
+            max-width: 150px;
+            text-align: center;
+            transition: background 0.3s ease;
+            user-select: none;
+        }
+
+        .back-button-footer:hover {
+            background: var(--secondary-color);
         }
 
         footer {
@@ -303,86 +321,31 @@
                 <div class="objective-icon">
                     <i class="fas fa-tools"></i>
                 </div>
-                <h3 class="objective-title">Troubleshooting</h3>
-                <p class="objective-description">Mengidentifikasi dan mengatasi masalah umum pada transmisi</p>
+                <h3 class="objective-title">Video Pembelajaran</h3>
+                <p class="objective-description">Video pembelajaran tentang transmisi manual adalah media pendidikan yang menjelaskan cara kerja, fungsi, dan penggunaan sistem transmisi manual pada kendaraan.</p>
             </div>
         </div>
     </div>
 
     <div class="video-container">
+        
         <div class="video-card">
-            <div class="thumbnail-container">
-                <img src="slidingmesh.jpg" alt="Video Sliding Mesh" class="thumbnail">
-                <div class="play-icon">
-                    <i class="fas fa-play"></i>
-                </div>
-                <div class="duration-badge">10:25</div>
-            </div>
+            <video controls style="width: 100%; height: auto;">
+                <source src="Video Pembelajran.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <i>Sumber : Jaes- Lesics Indonesia</i>
             <div class="video-info">
-                <h3 class="video-title">Pengenalan Sliding Mesh</h3>
-                <p class="video-description">Pelajari dasar-dasar sistem transmisi Sliding Mesh dan cara kerjanya.</p>
+                <h3 class="video-title">Pembelajaran Transmisi manual</h3>
+                <p class="video-description">Dasar-dasar sistem transmisi dan cara kerjanya.</p>
                 <div class="video-meta">
-                    <span><i class="fas fa-eye"></i> 1.2K views</span>
-                    <span><i class="fas fa-calendar"></i> 2024</span>
                 </div>
             </div>
         </div>
 
-        <div class="video-card">
-            <div class="thumbnail-container">
-                <img src="unit-synchromesh-2.png" alt="Video Synchromesh" class="thumbnail">
-                <div class="play-icon">
-                    <i class="fas fa-play"></i>
-                </div>
-                <div class="duration-badge">15:30</div>
-            </div>
-            <div class="video-info">
-                <h3 class="video-title">Sistem Synchromesh</h3>
-                <p class="video-description">Memahami mekanisme dan keunggulan sistem Synchromesh.</p>
-                <div class="video-meta">
-                    <span><i class="fas fa-eye"></i> 1.5K views</span>
-                    <span><i class="fas fa-calendar"></i> 2024</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-card">
-            <div class="thumbnail-container">
-                <img src="constant-mesh.jpeg" alt="Video Constant Mesh" class="thumbnail">
-                <div class="play-icon">
-                    <i class="fas fa-play"></i>
-                </div>
-                <div class="duration-badge">12:45</div>
-            </div>
-            <div class="video-info">
-                <h3 class="video-title">Constant Mesh Transmission</h3>
-                <p class="video-description">Eksplorasi sistem Constant Mesh dan aplikasinya.</p>
-                <div class="video-meta">
-                    <span><i class="fas fa-eye"></i> 980 views</span>
-                    <span><i class="fas fa-calendar"></i> 2024</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-card">
-            <div class="thumbnail-container">
-                <img src="unit-synchromesh-2.png" alt="Video Troubleshooting" class="thumbnail">
-                <div class="play-icon">
-                    <i class="fas fa-play"></i>
-                </div>
-                <div class="duration-badge">20:15</div>
-            </div>
-            <div class="video-info">
-                <h3 class="video-title">Troubleshooting Transmisi Manual</h3>
-                <p class="video-description">Panduan mengatasi masalah umum pada transmisi manual.</p>
-                <div class="video-meta">
-                    <span><i class="fas fa-eye"></i> 2.1K views</span>
-                    <span><i class="fas fa-calendar"></i> 2024</span>
-                </div>
-            </div>
-        </div>
     </div>
-
+    <!-- Kembali Button -->
+    <button class="back-button-footer" onclick="window.history.back();" aria-label="Kembali ke halaman sebelumnya">Kembali</button>
     <footer>
         E-LEARNING TRANSMISI MANUAL<br>
         UNIVERSITAS NEGERI SEMARANG

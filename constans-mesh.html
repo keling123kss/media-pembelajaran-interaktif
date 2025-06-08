@@ -253,7 +253,24 @@
             background: rgba(255, 255, 255, 0.8);
             box-shadow: var(--shadow-md);
         }
+        .back-button-footer {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 1rem auto;
+            display: block;
+            max-width: 150px;
+            text-align: center;
+            transition: background 0.3s ease;
+            user-select: none;
+        }
 
+        .back-button-footer:hover {
+            background: var(--secondary-color);
+        }
        
         footer {
             background: linear-gradient(to right, var(--accent-color), #26c6da);
@@ -498,52 +515,50 @@
                 Pengertian Constant Mesh
             </h2>
             <p>
-                Pada tipe ini main gear selalu berhubungan dengan gigi pada counter shaft, main gear dilengkapi dengan dog gear yang akan dihubungkan dengan sleeve yang terpasang pada outputshaft. Shift arm menggerakan sleeve agar terjadi perpindahan putar dari main gear ke main shfat.
+                Transmisi tipe constant mesh adalah jenis transmisi manual yang cara kerja dalam pemindahan giginya memerlukan bantuan kopling geser agar terjadi perpindahan tenaga dari poros input ke poros out put. Transmisi jenis constant mesh antara roda gigi input dan out put nya selalu berkaitan, tetapi roda gigi output tidak satu poros dengan poros output transmisi. Tenaga akan diteruskan ke poros output melalui mekanisme kopling geser. Transmisi jenis ini memungkinkan untuk menggunakan roda gigi lebih dari satu jenis
             </p>
             <div class="interactive-tabs">
-                <button class="tab-button active" onclick="showTab('overview')">Overview</button>
                 <button class="tab-button" onclick="showTab('components')">Komponen</button>
                 <button class="tab-button" onclick="showTab('working')">Cara Kerja</button>
             </div>
-            <div id="overview" class="tab-content active">
-                <div class="animation-container">
-                    <img src="constant-mesh.jpeg" alt="Synchromesh Unit" style="width: 100%; height: 100%; object-fit: contain;">
-                </div>
-            </div>
-            <div id="components" class="tab-content">
+            <div id="components" class="tab-content" style="text-align: center;">
+                <img src="constant-mesh.jpeg" alt="Synchromesh Unit" style="width: 50%; height: auto; object-fit: contain; margin-bottom: 20px;">
                 <div class="feature-grid">
                     <div class="feature-card">
-                        <h3><i class="fas fa-cog"></i> Constant Mesh</h3>
-                        <p>Komponen yang menyamakan kecepatan gigi</p>
+                        <h3><i class="fas fa-cog"></i> Input Shaft</h3>
+                        <p>Poros input adalah poros yang menghubungkan mesin dengan transmisi. Poros ini menerima tenaga dari mesin dan mentransfernya ke gigi-gigi dalam transmisi.</p>
                     </div>
                     <div class="feature-card">
-                        <h3><i class="fas fa-cog"></i> Clutch Hub</h3>
-                        <p>Penghubung antara synchronizer ring dan gigi</p>
+                        <h3><i class="fas fa-cog"></i> Output Shaft</h3>
+                        <p>Poros output mentransfer tenaga yang telah diproses oleh gigi-gigi transmisi ke roda kendaraan.</p>
                     </div>
                     <div class="feature-card">
                         <h3><i class="fas fa-cog"></i> Shift Fork</h3>
+                        <p>Penggerak mekanisme perpindahan gigi</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-cog"></i> Selector Fork</h3>
+                        <p>Penggerak mekanisme perpindahan gigi</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-cog"></i> Dog Gear</h3>
                         <p>Penggerak mekanisme perpindahan gigi</p>
                     </div>
                 </div>
             </div>
             <div id="working" class="tab-content">
                 <div class="interactive-diagram">
-                    <img src="constant-mesh.jpeg" alt="Synchromesh Working" style="width: 100%; height: auto;">
-                    <div class="diagram-hotspot" style="top: 30%; left: 20%">
-                        <div class="hotspot-content">
-                            Constant Mesh menyamakan kecepatan
-                        </div>
-                    </div>
-                    <div class="diagram-hotspot" style="top: 50%; left: 40%">
-                        <div class="hotspot-content">
-                            Clutch Hub menghubungkan komponen
-                        </div>
-                    </div>
+                    <video controls style="width: 100%; height: auto;">
+                        <source src="contant-mesh.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <i>Sumber : Jaes- Lesics Indonesia </i>
                 </div>
             </div>
         </section>
     </div>
-
+    <!-- Kembali Button -->
+    <button class="back-button-footer" onclick="window.history.back();" aria-label="Kembali ke halaman sebelumnya">Kembali</button>
     <footer>
         E-LEARNING TRANSMISI MANUAL<br>
         UNIVERSITAS NEGERI SEMARANG

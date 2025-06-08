@@ -253,7 +253,25 @@
             background: rgba(255, 255, 255, 0.8);
             box-shadow: var(--shadow-md);
         }
+        .back-button-footer {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 1rem auto;
+            display: block;
+            max-width: 150px;
+            text-align: center;
+            transition: background 0.3s ease;
+            user-select: none;
+        }
 
+        .back-button-footer:hover {
+            background: var(--secondary-color);
+        }
+        
 
         footer {
             background: linear-gradient(to right, var(--accent-color), #26c6da);
@@ -501,56 +519,50 @@
                 Synchromesh adalah sistem transmisi manual yang dilengkapi dengan unit sinkroniser untuk menyamakan kecepatan gigi yang akan dipasangkan, sehingga perpindahan gigi menjadi lebih halus dan tidak menimbulkan kerusakan pada gigi.
             </p>
             <div class="interactive-tabs">
-                <button class="tab-button active" onclick="showTab('overview')">Overview</button>
                 <button class="tab-button" onclick="showTab('components')">Komponen</button>
                 <button class="tab-button" onclick="showTab('working')">Cara Kerja</button>
             </div>
-            <div id="overview" class="tab-content active">
-                <div class="animation-container">
-                    <img src="unit-synchromesh-2.png" alt="Synchromesh Unit" style="width: 100%; height: 100%; object-fit: contain;">
-                </div>
-            </div>
-            <div id="components" class="tab-content">
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3><i class="fas fa-cog"></i> Synchronizer Ring</h3>
-                        <p>untuk menyamakan putaran antara synchromesh dengan roda gigi percepatan dan proses pengereman.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3><i class="fas fa-cog"></i> Clutch Hub</h3>
+            <div id="components" class="tab-content" style="text-align: center;">
+                <img src="unit-synchromesh-2.png" alt="Synchromesh Unit" style="width: 50%; height: auto; object-fit: contain; margin-bottom: 20px;">
+                <div class="feature-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                    <div class="feature-card" style="flex: 1 1 200px; max-width: 250px; text-align: left; border: 1px solid #ccc; border-radius: 8px; padding: 15px;">
+                        <h3><i class="fas fa-cog"></i> 1. Clutch Hub</h3>
                         <p>berfungsi untuk meneruskan tenaga dari clutch hub sleeve atau kopling geser menuju poros output transmisi.</p>
                     </div>
-                    <div class="feature-card">
-                        <h3><i class="fas fa-cog"></i> Clutch Hub Sleeve</h3>
-                        <p>berfungsi untuk menghubungkan dan juga memutuskan putaran dari roda gigi percepatan ke clutch hub. </p>
+                    <div class="feature-card" style="flex: 1 1 200px; max-width: 250px; text-align: left; border: 1px solid #ccc; border-radius: 8px; padding: 15px;">
+                        <h3><i class="fas fa-cog"></i> 2. Clutch Hub Sleeve</h3>
+                        <p>berfungsi untuk menghubungkan dan juga memutuskan putaran dari roda gigi percepatan ke clutch hub.</p>
                     </div>
-                    <div class="feature-card">
-                        <h3><i class="fas fa-cog"></i> Shifting Key</h3>
+                    <div class="feature-card" style="flex: 1 1 200px; max-width: 250px; text-align: left; border: 1px solid #ccc; border-radius: 8px; padding: 15px;">
+                        <h3><i class="fas fa-cog"></i> 3. Shifting Key</h3>
                         <p>berfungsi untuk meminimalisir terjadinya perubahan gigi mobil sebelum putaran roda gigi dan juga clutch hub sama.</p>
                     </div>
-                    <div class="feature-card">
-                        <h3><i class="fas fa-cog"></i> Spring Key</h3>
+                    <div class="feature-card" style="flex: 1 1 200px; max-width: 250px; text-align: left; border: 1px solid #ccc; border-radius: 8px; padding: 15px;">
+                        <h3><i class="fas fa-cog"></i> 4. Spring Key</h3>
                         <p>berfungsi untuk mengunci shifting key agar tak lepas dari dudukannya yang terdapat pada clutch hub.</p>
+                    </div>
+                    <div class="feature-card" style="flex: 1 1 200px; max-width: 250px; text-align: left; border: 1px solid #ccc; border-radius: 8px; padding: 15px;">
+                        <h3><i class="fas fa-cog"></i> 5. Synchronizer Ring</h3>
+                        <p>untuk menyamakan putaran antara synchromesh dengan roda gigi percepatan dan proses pengereman.</p>
                     </div>
                 </div>
             </div>
             <div id="working" class="tab-content">
                 <div class="interactive-diagram">
-                    <img src="unit-synchromesh-2.png" alt="Synchromesh Working" style="width: 50%; height: auto;">
-                    <div class="diagram-hotspot" style="top: 30%; left: 20%">
-                        <div class="hotspot-content">
-                            Synchronizer Ring menyamakan kecepatan
-                        </div>
-                    </div>
-                    <div class="diagram-hotspot" style="top: 50%; left: 40%">
-                        <div class="hotspot-content">
-                            Clutch Hub menghubungkan komponen
-                        </div>
-                    </div>
+                    <video controls style="width: 100%; height: auto;">
+                        <source src="cara kerja synchromesh.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <i>Sumber : Jaes- Lesics Indonesia </i>
                 </div>
             </div>
+            
+            </div>
+            
         </section>
     </div>
+    <!-- Kembali Button -->
+    <button class="back-button-footer" onclick="window.history.back();" aria-label="Kembali ke halaman sebelumnya">Kembali</button>
 
     <footer>
         E-LEARNING TRANSMISI MANUAL<br>
